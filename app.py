@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 
 # Load the model
+@st.cache_resource
 with open('diabetes_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
